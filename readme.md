@@ -7,6 +7,8 @@ I will try to make the editable fusion360 file(s) later on.
 
 ## Code:
 The code for driving the LEDs is for the ESP-12S module! I am using the familiar Arduino core for programming it. So getting it ported will be relatively easy. Find it in the "code" directory. Use platformIO or the arduino IDE, whichever helps!
-The WS2812FX library has been used. I hope to keep the effects stock, as provided by its creator. Custom stuff will come later...
+The WS2812FX library has been used. Find it [here](https://github.com/kitesurfer1404/WS2812FX).
+
+I hope to keep the effects stock, as provided by its creator. Custom stuff will come later...
 
 ### More changes to code coming soon. Pull requests and suggestions are always welcome!
