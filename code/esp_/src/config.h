@@ -26,5 +26,12 @@
  * For the pin mappings, check references to the specific board.
  * For ESP-12S the GPIOs exposed are 15, 2, 0, 4, 5, 13, 12, 14, 16.
  **/
+#define LED_TYPE NEO_GRBW
+#define LEDKHZ NEO_KHZ800
 #define PIN 2 // GPIO2
 #define LED 24
+
+/**
+ * Color stuff
+ **/
+#define DEFAULT_COLOR 0xFF00FFAA
