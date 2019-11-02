@@ -32,6 +32,8 @@
 #define LED 24
 
 /**
- * Color stuff
+ * Color and mode stuff
  **/
 #define DEFAULT_COLOR 0xFF00FFAA
+#define TIMECYCLE 100000
+#define NUM_MODES 12

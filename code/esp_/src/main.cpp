@@ -10,6 +10,8 @@ ESP8266WebServer server(HTTP_PORT);
 WS2812FX strip = WS2812FX(LED, PIN, LED_TYPE+LEDKHZ);
 
 bool autoCycle = false;
+unsigned long now = 0L, lastTime = 0L;
+int mode=0;
 
 // Request handlers
 void handlest(){
@@ -91,4 +93,9 @@ void setup(void) {
 void loop(void) {
   strip.service();
   server.handleClient();
+  now = millis();
+  if( autoCycle && (now - lastTime)>=TIMECYCLE){
+    strip.setMode(mode);
+    mode = (mode<=NUM_MODES) ? mode++ : 0;
+  }
 }
